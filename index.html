@@ -440,7 +440,30 @@ html, body {
 .slide.active .zero-chip:nth-child(3) { animation: fadeInUp .4s ease .71s forwards; }
 .zero-chip i { color: #DC2626; font-size: 12px; }
 
-/* ═════ SLIDE 7 — TubeLulu ═════ */
+/* ═════ 서비스 화면 (스크린샷) ═════ */
+.shots { display: flex; justify-content: center; align-items: flex-start; gap: 34px; }
+.shot { text-align: center; opacity: 0; }
+.slide.active .shot:nth-child(1) { animation: fadeInUp .55s ease .1s forwards; }
+.slide.active .shot:nth-child(2) { animation: fadeInUp .55s ease .24s forwards; }
+.slide.active .shot:nth-child(3) { animation: fadeInUp .55s ease .38s forwards; }
+.shot .phone {
+  width: 204px; border-radius: 22px; overflow: hidden;
+  border: 1px solid var(--card-border);
+  box-shadow: 0 14px 34px rgba(23,24,43,0.14);
+  background: #fff;
+}
+.shot .phone img { display: block; width: 100%; height: 372px; object-fit: cover; object-position: top; }
+.shot .cap { margin-top: 12px; font-size: 13.5px; font-weight: 700; color: var(--text); }
+.shot .cap span { display: block; font-size: 11.5px; font-weight: 400; color: var(--text-dim); margin-top: 2px; }
+.dev-note {
+  margin-top: 18px; text-align: center;
+  font-size: 12.5px; color: var(--text-dim); opacity: 0;
+}
+.slide.active .dev-note { animation: fadeInUp .5s ease .5s forwards; }
+.dev-note i { margin-right: 6px; }
+.stage-banner .note { font-size: 12.5px; font-weight: 400; color: var(--text-dim); margin-top: 6px; }
+
+/* ═════ SLIDE — TubeLulu ═════ */
 .t-rows .frow { opacity: 0; }
 .t-rows .frow:hover { border-color: rgba(217,119,6,0.35); }
 .slide.active .t-rows .frow:nth-child(1) { animation: fadeInLeft .5s ease .12s forwards; }
@@ -700,6 +723,7 @@ kbd {
       </div>
       <div class="stage-banner">
         <p>두 프로젝트 모두 <strong>공개 테스트를 앞두고 있으며</strong>, 함께할 크리에이터 파트너를 찾고 있습니다</p>
+        <p class="note">※ 두 서비스 모두 개발 진행 중인 단계로, 링크에서 보시는 화면은 완성 전 버전인 점 참고 부탁드립니다</p>
       </div>
     </div>
   </div>
@@ -793,9 +817,35 @@ kbd {
     </div>
   </div>
 
-  <!-- ═════ SLIDE 7 — TubeLulu ═════ -->
+  <!-- ═════ SLIDE 7 — LinkPlay 화면 ═════ -->
   <div class="slide" id="slide-7">
     <div class="ghost-num">07</div>
+    <div class="slide-header">
+      <div class="eyebrow t-teal">Project 01 — LinkPlay</div>
+      <div class="slide-title">LinkPlay <span class="grad g-teal">서비스 화면</span></div>
+    </div>
+    <div class="slide-content">
+      <div class="shots">
+        <div class="shot">
+          <div class="phone"><img src="img/lp-main.png" alt="LinkPlay 메인 화면"></div>
+          <div class="cap">메인 화면<span>미니게임 목록과 라이브 방송</span></div>
+        </div>
+        <div class="shot">
+          <div class="phone"><img src="img/lp-lobby.png" alt="LinkPlay 대기 화면"></div>
+          <div class="cap">대기 화면<span>QR·링크 공유로 시청자 입장</span></div>
+        </div>
+        <div class="shot">
+          <div class="phone"><img src="img/lp-game.png" alt="LinkPlay 게임 화면"></div>
+          <div class="cap">게임 화면<span>스트리머와 1:1 실시간 대결</span></div>
+        </div>
+      </div>
+      <div class="dev-note"><i class="fas fa-circle-info"></i>현재 개발 진행 중인 화면으로, 정식 버전과 일부 다를 수 있습니다</div>
+    </div>
+  </div>
+
+  <!-- ═════ SLIDE 8 — TubeLulu ═════ -->
+  <div class="slide" id="slide-8">
+    <div class="ghost-num">08</div>
     <div class="slide-header">
       <div class="eyebrow t-amber">Project 02 — TubeLulu</div>
       <div class="slide-title">지금 하는 활동은 그대로, <span class="grad g-amber">소통 채널 하나</span>를 더합니다</div>
@@ -838,9 +888,35 @@ kbd {
     </div>
   </div>
 
-  <!-- ═════ SLIDE 8 — 협업 제안 ═════ -->
-  <div class="slide" id="slide-8">
-    <div class="ghost-num">08</div>
+  <!-- ═════ SLIDE 9 — TubeLulu 화면 ═════ -->
+  <div class="slide" id="slide-9">
+    <div class="ghost-num">09</div>
+    <div class="slide-header">
+      <div class="eyebrow t-amber">Project 02 — TubeLulu</div>
+      <div class="slide-title">TubeLulu <span class="grad g-amber">서비스 화면</span></div>
+    </div>
+    <div class="slide-content">
+      <div class="shots">
+        <div class="shot">
+          <div class="phone"><img src="img/tb-main.png" alt="TubeLulu 메인 화면"></div>
+          <div class="cap">메인 화면<span>오늘의 인사이트 피드</span></div>
+        </div>
+        <div class="shot">
+          <div class="phone"><img src="img/tb-insight.png" alt="TubeLulu 인사이트 화면"></div>
+          <div class="cap">인사이트<span>인플루언서의 콘텐츠와 이야기</span></div>
+        </div>
+        <div class="shot">
+          <div class="phone"><img src="img/tb-comment.png" alt="TubeLulu 질문·댓글 화면"></div>
+          <div class="cap">질문·댓글<span>팬의 질문과 프라이빗 소통</span></div>
+        </div>
+      </div>
+      <div class="dev-note"><i class="fas fa-circle-info"></i>현재 개발 진행 중인 화면으로, 정식 버전과 일부 다를 수 있습니다</div>
+    </div>
+  </div>
+
+  <!-- ═════ SLIDE 10 — 협업 제안 ═════ -->
+  <div class="slide" id="slide-10">
+    <div class="ghost-num">10</div>
     <div class="slide-header">
       <div class="eyebrow">Partnership</div>
       <div class="slide-title">이렇게 <span class="grad">함께</span>하고 싶습니다</div>
@@ -875,9 +951,9 @@ kbd {
     </div>
   </div>
 
-  <!-- ═════ SLIDE 9 — 진행 절차 ═════ -->
-  <div class="slide" id="slide-9">
-    <div class="ghost-num">09</div>
+  <!-- ═════ SLIDE 11 — 진행 절차 ═════ -->
+  <div class="slide" id="slide-11">
+    <div class="ghost-num">11</div>
     <div class="slide-header">
       <div class="eyebrow">Process</div>
       <div class="slide-title">진행은 <span class="grad">이렇게</span> 됩니다</div>
@@ -915,8 +991,8 @@ kbd {
     </div>
   </div>
 
-  <!-- ═════ SLIDE 10 — 마무리 ═════ -->
-  <div class="slide slide-final" id="slide-10">
+  <!-- ═════ SLIDE 12 — 마무리 ═════ -->
+  <div class="slide slide-final" id="slide-12">
     <div class="float-piece fp-1" style="top:90px; right:120px;"><i class="fas fa-gamepad"></i></div>
     <div class="float-piece fp-3" style="bottom:110px; left:120px; right:auto;"><i class="fas fa-comment-dots"></i></div>
     <div class="slide-content" style="align-items:center;">
@@ -957,16 +1033,17 @@ kbd {
 </div>
 
 <div class="page-number">
-  <span class="current" id="current-page">1</span> / <span id="total-pages">10</span>
+  <span class="current" id="current-page">1</span> / <span id="total-pages">12</span>
 </div>
 
 <script>
 const slideTitles = [
   '표지', '회사 소개', '스토리', '두 개의 프로젝트',
-  'LinkPlay', 'LinkPlay 참여 방식', 'TubeLulu', '협업 제안', '진행 절차', '마무리'
+  'LinkPlay', 'LinkPlay 참여 방식', 'LinkPlay 화면',
+  'TubeLulu', 'TubeLulu 화면', '협업 제안', '진행 절차', '마무리'
 ];
 
-const totalSlides = 10;
+const totalSlides = 12;
 let currentSlide = 1;
 let isAnimating = false;
 
