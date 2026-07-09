@@ -349,6 +349,19 @@ html, body {
   font-size: 12.5px; color: var(--text-dim);
 }
 .proj .aud i { font-size: 11px; }
+.proj-foot { margin-top: 18px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.proj-foot .aud { margin-top: 0; }
+.proj-link {
+  display: inline-flex; align-items: center; gap: 7px;
+  font-size: 12.5px; font-weight: 700; text-decoration: none;
+  padding: 8px 16px; border-radius: 50px;
+  transition: transform .2s ease, box-shadow .2s ease;
+  position: relative; z-index: 2;
+}
+.proj-link:hover { transform: translateY(-2px); }
+.proj-link i { font-size: 10px; }
+.proj.lp .proj-link { color: #fff; background: var(--grad-teal); box-shadow: 0 4px 14px rgba(13,148,136,0.3); }
+.proj.tb .proj-link { color: #fff; background: var(--grad-amber); box-shadow: 0 4px 14px rgba(217,119,6,0.3); }
 
 /* ═════ SLIDE 5 — LinkPlay ═════ */
 .stat-row { display: flex; gap: 14px; margin-bottom: 18px; }
@@ -669,7 +682,10 @@ kbd {
           <h3>LinkPlay</h3>
           <div class="tagline">시청자를 플레이어로.</div>
           <p class="desc">방송 중 시청자가 스트리머에게 직접 도전하는 웹 미니게임 플랫폼입니다. 구경만 하던 시청자가 게임 상대가 되는 순간, 방송의 텐션이 달라집니다.</p>
-          <span class="aud"><i class="fas fa-video"></i>스트리머 · 방송 시청자</span>
+          <div class="proj-foot">
+            <span class="aud"><i class="fas fa-video"></i>스트리머 · 방송 시청자</span>
+            <a class="proj-link" href="https://pre.linkplay.club/" target="_blank" rel="noopener">pre.linkplay.club<i class="fas fa-arrow-up-right-from-square"></i></a>
+          </div>
         </div>
         <div class="proj tb">
           <span class="proj-badge">PROJECT 02</span>
